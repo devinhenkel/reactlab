@@ -1,0 +1,43 @@
+.menu-item {
+    min-width: 30%;
+    height: 248px;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333333;
+    margin: 0 7.5px 15px;
+
+    &:first-child {
+        margin-right: 7.5px;
+    }
+
+    &:last-child {
+        margin-left: 7.5px;
+    }
+
+    .content {
+        height: 90px;
+        padding: 0 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #333333;
+    }
+
+    .title {
+        font-family: museo-slab, serif;
+        font-weight: bold;
+        margin-bottom: 6px;
+        font-size: 22px;
+        color: #4a224a;
+        text-transform: uppercase;
+    }
+
+    .subtitle {
+        font-family: museo-sans, sans;
+        font-weight: lighter;
+        font-size: 16px
+    }
+}
