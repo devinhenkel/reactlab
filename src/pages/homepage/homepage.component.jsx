@@ -1,7 +1,7 @@
 import React from 'react';
 import './homepage.style.scss'
 
-import {MenuItem} from '../menuitem/menuitem.component'
+import {MenuItem} from '../../components/menuitem/menuitem.component'
 
 const HomePage = () => {
     return (
