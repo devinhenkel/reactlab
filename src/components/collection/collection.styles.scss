@@ -1,0 +1,19 @@
+.collection {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  
+    .collection-title {
+      font-size: 28px;
+      margin-bottom: 25px;
+      font-family: museo-slab;
+      text-transform: uppercase;
+    }
+  
+    .collection-preview {
+      display: flex;
+      justify-content: space-between;
+    }
+  }

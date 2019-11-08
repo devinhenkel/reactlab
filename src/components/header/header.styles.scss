@@ -1,0 +1,42 @@
+.header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 20px;
+
+    .header-logo-container {
+        padding: 20px; 
+        .header-logo {
+            width: 180px;
+            height: 80px;
+        }
+    }
+
+}
+
+
+
+.header-options {
+    font-family: museo;
+    
+    .header-option {
+        color: rgba(128, 128, 128, 1);
+        font-size: 1.2em;
+        justify-content: flex-end;
+        padding: 10px 15px;
+        &:any-link {
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: #ff6600;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        transition: transform .25s ease-out;
+    }
+}

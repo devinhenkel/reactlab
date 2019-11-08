@@ -14,7 +14,7 @@ class Menu extends React.Component {
                     subtitle: 'sausage',
                     imageurl: 'https://www.thedailymeal.com/sites/default/files/2019/01/18/0-Utah-MAIN2.jpg',
                     id: 1,
-                    linkUrl: '/breakfast'
+                    linkUrl: '/shop'
                 },
                 {
                     title: 'Brunch',

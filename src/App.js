@@ -1,16 +1,9 @@
 import React from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import HomePage from './pages/homepage/homepage.component'
-
-const Breakfast = () => {
-  return( 
-    <div>
-      <h1>Breakfast!</h1>
-      <Link to="/breakfast/34">34</Link>
-    </div>
-  )
-}
+import ShopPage from './pages/shop/shop.component';
+import Header from './components/header/header.component';
 
 const BreakfastItem = (props) => {
   console.log(props);
@@ -24,9 +17,10 @@ const BreakfastItem = (props) => {
 function App() {
   return (
     <div className="App">
+      <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/breakfast" component={Breakfast} />
+        <Route exact path="/shop" component={ShopPage} />
         <Route path="/breakfast/:breakfastid" component={BreakfastItem} />
       </Switch>
     </div>

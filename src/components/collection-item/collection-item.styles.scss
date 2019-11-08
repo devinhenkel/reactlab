@@ -1,0 +1,36 @@
+.collection-item {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: museo;
+  
+    .collection-item-image {
+      width: 100%;
+      height: 90%;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 15px;
+    }
+  
+    .collection-item-footer {
+      width: 100%;
+      height: 5%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+      align-items: flex-end;
+  
+      .collection-item-name {
+        width: 90%;
+        margin-bottom: 5px;
+      }
+  
+      .collection-item-price {
+        width: 10%;
+        margin-bottom: 5px;
+      }
+    }
+  }

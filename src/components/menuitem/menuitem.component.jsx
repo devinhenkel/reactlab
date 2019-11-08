@@ -2,9 +2,9 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import './menuitem.style.scss'
 
-const MenuItem = ({history, ...props}) => {
+const MenuItem = ({history, match, ...props}) => {
     return (
-        <div className={`${props.size} menu-item`} onClick={() => {history.push(props.linkUrl)}}>
+        <div className={`${props.size} menu-item`} onClick={() => {history.push(`${props.linkUrl}`)}}>
             <div 
                 className='menu-background' 
                 style={{
