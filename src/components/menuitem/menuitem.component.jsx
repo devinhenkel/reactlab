@@ -4,7 +4,7 @@ import './menuitem.style.scss'
 
 const MenuItem = ({history, match, ...props}) => {
     return (
-        <div className={`${props.size} menu-item`} onClick={() => {history.push(`${props.linkUrl}`)}}>
+        <div className={`${props.size} menu-item`} onClick={() => {history.push(`${match.url}${props.linkUrl}`)}}>
             <div 
                 className='menu-background' 
                 style={{
