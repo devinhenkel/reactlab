@@ -21,7 +21,7 @@ $main-color: #6004e1;
     width: 100%;
     border: none;
     border-radius: 0;
-    border-bottom: 2px solid $sub-color;
+    border-bottom: 2px solid $main-color;
     margin: 25px 0;
 
     &:focus {

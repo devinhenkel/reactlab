@@ -20,12 +20,14 @@
 
 .header-options {
     font-family: museo;
+    display: flex;
     
     .header-option {
         color: rgba(128, 128, 128, 1);
         font-size: 1.2em;
         justify-content: flex-end;
         padding: 10px 15px;
+        cursor: pointer;
         &:any-link {
             text-decoration: none;
         }

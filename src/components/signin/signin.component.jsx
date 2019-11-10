@@ -53,7 +53,7 @@ class SignIn extends React.Component {
                         <LabButton type='submit' value='submit'>
                             Login
                         </LabButton>
-                        <LabButton value='google' onClick={signInWithGoogle} extraStyles='purple'>
+                        <LabButton value='google' onClick={signInWithGoogle} extrastyles='google'>
                             Login with Google
                         </LabButton>
                     </div>
