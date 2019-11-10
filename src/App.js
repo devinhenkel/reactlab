@@ -4,6 +4,7 @@ import './App.css';
 import HomePage from './pages/homepage/homepage.component'
 import ShopPage from './pages/shop/shop.component';
 import Header from './components/header/header.component';
+import Registration from './pages/registration/registration.component';
 
 const BreakfastItem = (props) => {
   console.log(props);
@@ -21,6 +22,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/shop" component={ShopPage} />
+        <Route exact path="/registration" component={Registration} />
         <Route path="/breakfast/:breakfastid" component={BreakfastItem} />
       </Switch>
     </div>
