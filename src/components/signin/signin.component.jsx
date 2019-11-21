@@ -2,9 +2,11 @@ import React from 'react';
 
 import FormInput from '../form-input/form-input.component';
 import LabButton from '../lab-button/lab-button.component';
+import firebase from 'firebase/app';
 import './signin.styles.scss';
 
-import { signInWithGoogle } from '../../firebase/firebase.utils';
+import { signInWithGoogle, firestore } from '../../firebase/firebase.utils';
+
 
 class SignIn extends React.Component {
     constructor(props) {
@@ -18,6 +20,8 @@ class SignIn extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
+        const tempRef = firestore.doc('users/W4k5QvgscLRP8ndjOiihBQFHz8j2').update({stink: 'link'});
+        console.log(tempRef);
         this.setState({email:'',password:''});
     }
 

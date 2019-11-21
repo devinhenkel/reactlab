@@ -10,7 +10,13 @@
         padding: 20px; 
         .header-logo {
             width: 180px;
-            height: 80px;
+            margin-top: 10px;
+
+            .logo-bulb {
+                opacity: 0;
+                transform-origin: 50% 50%;
+                animation: bulbfade .5s .5s ease-out both;
+            }
         }
     }
 
@@ -42,5 +48,16 @@
     &:hover {
         transform: scale(1.1);
         transition: transform .25s ease-out;
+    }
+}
+
+@keyframes bulbfade {
+    from {
+        opacity: 0;
+  
+    }
+    to {
+        opacity: 1;
+
     }
 }
